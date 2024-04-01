@@ -31,3 +31,8 @@ export const getAllUsers = async () => {
   logger.info(`API::user: Fetching all users`);
   return await apiFetch("/users");
 };
+
+export const getUserByAuthId = async (authId: string) => {
+  logger.info(`API::user: Fetching user by authId - ${authId}`);
+  return await apiFetch(`/users?authId=${authId}`);
+};

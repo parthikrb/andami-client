@@ -12,8 +12,8 @@ export const usePermissionClient = () => {
 
   const hasPermission = (permission: string) =>
     data?.permissions
-      .map((localPermission: any) => localPermission.name)
-      .includes(permission) || false;
+      ?.map((localPermission: any) => localPermission.name)
+      ?.includes(permission) || false;
 
   return {
     canCreate: {
