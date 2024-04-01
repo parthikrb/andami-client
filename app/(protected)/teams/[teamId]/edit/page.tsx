@@ -14,6 +14,8 @@ import {
 import { redirect } from "next/navigation";
 import EditTeamForm from "../../_components/edit-team-form/edit-team-form";
 
+export const revalidate = 0;
+
 const EditTeamDetailsPage = async ({
   params,
 }: {
