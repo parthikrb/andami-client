@@ -1,10 +1,9 @@
 "use client";
 
 import { Checkbox } from "@/components/ui/checkbox";
-import { UserResponse } from "@/services/user.service";
 import { ColumnDef } from "@tanstack/react-table";
 
-const addUserToTeamColumn: ColumnDef<UserResponse>[] = [
+const addUserToTeamColumn: ColumnDef<any>[] = [
   {
     id: "select",
     header: ({ table }) => (
